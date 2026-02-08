@@ -22,3 +22,16 @@ En app som gjør samarbeidet i et kollektiv enklere og mer oversiktlig.
 - Styling: Tailwind (eller CSS Modules)
 - Auth: Lucia (valgfritt)
 - Testing: Bun test
+
+## Prosjektstruktur (monorepo)
+- `apps/api`: Elysia API
+- `apps/web`: React + Vite frontend
+- `packages/db`: Drizzle schema og migrasjoner
+
+## Kom i gang
+1. Installer avhengigheter: `bun install`
+2. Kopier miljøfil: `cp apps/api/.env.example apps/api/.env`
+3. Start utvikling:
+   - `bun run dev` (starter både web + api)
+   - `bun run dev:web`
+   - `bun run dev:api`

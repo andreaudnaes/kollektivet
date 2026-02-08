@@ -1,0 +1,15 @@
+{
+  "name": "kollektiv-app",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "bun --filter ./apps/web dev & bun --filter ./apps/api dev",
+    "dev:web": "bun --filter ./apps/web dev",
+    "dev:api": "bun --filter ./apps/api dev",
+    "test": "bun test",
+    "lint": "echo 'lint: not configured'"
+  }
+}

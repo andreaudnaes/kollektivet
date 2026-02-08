@@ -1,0 +1,21 @@
+{
+  "name": "@kollektiv/api",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun --hot src/index.ts",
+    "start": "bun src/index.ts",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@sinclair/typebox": "^0.32.35",
+    "elysia": "^1.0.0",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.34.0",
+    "postgres": "^3.4.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "@types/node": "^22.10.1"
+  }
+}
